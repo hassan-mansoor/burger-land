@@ -1,0 +1,74 @@
+ [
+    {
+    "id": 1,
+    "category": "combos",
+    "products": [
+        {
+            "id": 101,
+            "title": "CHEESEBURGER",
+            "description": "Our organic beef patty, onion, cheddar, pickles, mayo, mustard & ketchup in our organic, homemade bun. Served with fries and soda, water, organic lemonade or beer.",
+            "price": "115.00"
+        },
+        {
+            "id": 102,
+            "title": "FRIED CHICKEN BURGER",
+            "description": "Freshly battered chicken breast, lettuce, pickles, mayo & chipotle mayo in our organic, homemade bun. Served with fries and soda, water, organic lemonade or beer.",
+            "price": "120.00"
+        },
+        {
+            "id": 103,
+            "title": "HALLOUMI BURGER (VEGETARIAN)",
+            "description": "Fried halloumi, tomato, lettuce, onion, pickles & Jagger dip in our organic, homemade bun. Served with fries and soda, water, organic lemonade or beer.",
+            "price": "120.00"
+        },
+        {
+            "id": 104,
+            "title": "HAMBURGER",
+            "description": "Our organic beef patty, pickles, mayo, mustard & ketchup in our organic, homemade bun. Served with fries and soda, water, organic lemonade or beer.",
+            "price": "105.00"
+        },
+        {
+            "id": 105,
+            "title": "JAGGER BURGER",
+            "description": "Our organic beef patty, cheddar, tomato, lettuce, onion, pickles & Jagger dip in our organic, homemade bun. Served with fries and soda, water, organic lemonade or beer.",
+            "price": "120.00"
+        }
+    ]
+    },
+    {
+    "id": 2,
+    "category": "burgers",
+    "products": [
+        {
+            "id": 201,
+            "title": "CHEESEBURGER",
+            "description": "Our organic beef patty, onion, cheddar, pickles, mayo, mustard & ketchup in our organic, homemade bun. Served with fries and soda, water, organic lemonade or beer.",
+            "price": "75.00"
+        },
+        {
+            "id": 202,
+            "title": "FRIED CHICKEN BURGER",
+            "description": "Freshly battered chicken breast, lettuce, pickles, mayo & chipotle mayo in our organic, homemade bun. Served with fries and soda, water, organic lemonade or beer.",
+            "price": "80.00"
+        },
+        {
+            "id": 203,
+            "title": "HALLOUMI BURGER (VEGETARIAN)",
+            "description": "Fried halloumi, tomato, lettuce, onion, pickles & Jagger dip in our organic, homemade bun. Served with fries and soda, water, organic lemonade or beer.",
+            "price": "80.00"
+        },
+        {
+            "id": 204,
+            "title": "HAMBURGER",
+            "description": "Our organic beef patty, pickles, mayo, mustard & ketchup in our organic, homemade bun. Served with fries and soda, water, organic lemonade or beer.",
+            "price": "80.00"
+        },
+        {
+            "id": 205,
+            "title": "JAGGER BURGER",
+            "description": "Our organic beef patty, cheddar, tomato, lettuce, onion, pickles & Jagger dip in our organic, homemade bun. Served with fries and soda, water, organic lemonade or beer.",
+            "price": "70.00"
+        }
+    ]
+    }
+]

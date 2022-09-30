@@ -1,0 +1,44 @@
+body {
+    background-color: #fff;
+
+    .menu__top {
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+   .app {
+        flex-direction: column;
+     
+        &__logo {
+            width: 125px !important;
+            height: 125px !important;  
+        }
+
+        &__cart {
+            display: none;
+        }
+
+        &__page-content-wrapper {
+            margin-top: 10rem;;
+        }
+
+        &__sidebar-wrapper {
+            text-align: center;
+            position: fixed;
+            background: #fff;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+        }
+
+        .menu__sidebar {
+            display: none;
+        }
+
+        .menu__top {
+            display: block;
+        }
+    }
+}

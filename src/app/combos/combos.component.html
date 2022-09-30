@@ -1,0 +1,32 @@
+<div class="combos">
+    <h1>{{ title }}</h1>
+    <div class="combos__list">
+      <div class="card mb-3" *ngFor="let item of items">
+        <div class="card-body">              
+          <div class="d-flex">                  
+            <div>
+                <div class="combos__list--img"></div>                
+            </div>
+            <div> 
+                <h2 class="card-title">{{item.title}}</h2>
+                <div class="card-text">{{ item.description}}</div>
+            </div>
+          </div>
+          <div class="text-right">           
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+              <select class="form-select mr-2" aria-label="Default select example">
+                <option selected>1 stk.</option>
+                <option value="1">2 stk.</option>
+                <option value="2">3 stk.</option>
+                <option value="3">4 stk.</option>
+              </select>
+              <button type="button" class="btn btn-light">
+                <span class="badge bg-light text-dark mr-1">Price: {{item.price}}</span>
+                <span>Purchase</span>
+              </button>
+            </div>
+        </div> 
+        </div>
+      </div>
+    </div>
+</div>

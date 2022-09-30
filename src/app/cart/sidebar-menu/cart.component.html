@@ -1,0 +1,39 @@
+<div class="card cart">
+  <div class="card-header">
+    <button *ngIf="displayAsModal" type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="close()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div [ngClass]="displayAsModal ? 'float-left' : 'float-right'">
+      <i class="bi bi-cart-fill mr-1"></i>
+      <span class="mr-1">DKK</span>
+      <span>{{ totalPrice }}</span>
+      </div>
+  </div>
+  <div class="card-body">
+    <div class="d-flex justify-content-around text-center">
+      <div class="pick-up">
+        <div><i class="bi bi-box"></i></div>
+        <div>Pick up</div>
+      </div>
+      <div class="time">
+        <div><i class="bi bi-clock"></i></div>
+        <div>Estimated time</div>
+      </div>
+    </div>
+    <div class="cart__list mt-3 mb-3">
+      <div class="cart_list--item" *ngFor="let item of cartItems">
+        <button type="button" class="close float-left mr-1" aria-label="Close" (click)="removeItemFromCart(item)">
+          <i class="bi bi-trash"></i>
+        </button>
+        <div class="order-summary">
+          <div>{{item.quantity}} stk. {{item.title}} {{item.purchasePrice}}</div>
+          <div class="order-summary--other">
+            1 x fries
+            2 x cola
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary btn-block" (click)="addOrderDetails()">Order</button>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+.app {
+  margin: 20px;
+  justify-content: space-between;
+
+  &__logo {
+      height: 200px;
+      width: 200px;
+  }
+
+  &__cart {
+    margin-top: 3.5rem;
+  }
+
+  &__page-content-wrapper {
+    width: 100%;
+  }
+}

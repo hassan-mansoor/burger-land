@@ -1,0 +1,78 @@
+<div class="extras modal-header">
+  <h5 class="modal-title" [textContent]="title"></h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="close()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="extras__content modal-body">
+  <!----Items that can be removed from the burger-->
+  <div class="extras__optout">
+    <div class="card-body pl-0 pr-0">
+      <h5 class="card-title">Optout</h5>
+      <div class="d-block">
+        <button class="badge m-1 extras__optout--items"
+                [ngClass]="item.selected ? 'badge-secondary' : 'badge-light'"
+                (click)="toggleSelect(item)"
+                *ngFor="let item of optOut">
+          {{item.name}}
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="extras__fries">
+    <div class="card-body pl-0 pr-0">
+      <h5 class="card-title">Fries</h5>
+      <div class="d-block">
+        <button class="badge m-1 extras__fries--items"
+                [ngClass]="item.selected ? 'badge-secondary' : 'badge-light'"
+                (click)="toggleSelect(item)"
+                *ngFor="let item of fries">
+          {{item.name}}-{{item.selected}}
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="extras__drinks">
+    <div class="card-body pl-0 pr-0">
+      <h5 class="card-title">Drinks</h5>
+      <div class="d-block">
+        <button class="badge m-1 extras__drinks--items"
+                [ngClass]="item.selected ? 'badge-secondary' : 'badge-light'"
+                (click)="toggleSelect(item)"
+                *ngFor="let item of drinks">
+          {{item.name}}
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="extras__for-burger">
+    <div class="card-body pl-0 pr-0">
+      <h5 class="card-title">Extra for Burger</h5>
+      <div class="d-block">
+        <button class="badge m-1 extras__for-burger--items"
+                [ngClass]="item.selected ? 'badge-secondary' : 'badge-light'"
+                (click)="toggleSelect(item)"
+                *ngFor="let item of extraForBurger">
+          {{item.name}}
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="extras__sauce">
+    <div class="card-body pl-0 pr-0">
+      <h5 class="card-title">Sauces</h5>
+      <div class="d-block">
+        <button class="badge m-1 extras__sauce--items"
+                [ngClass]="item.selected ? 'badge-secondary' : 'badge-light'"
+                (click)="toggleSelect(item)"
+                *ngFor="let item of sauce">
+          {{item.name}}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-footer d-flex justify-content-between">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="close()">Close</button>
+  <button type="button" class="btn btn-primary" (click)="extrasToadd()">Add</button>
+</div>

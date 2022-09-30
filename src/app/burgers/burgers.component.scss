@@ -1,0 +1,10 @@
+.burgers {    
+    &__list {
+        &--img {
+            background: url('../../assets/images/sample-img.jpg') no-repeat center;
+            height: 150px;
+            width: 150px;
+            background-size: 150px;
+        }
+    }
+}

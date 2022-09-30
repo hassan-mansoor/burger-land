@@ -1,0 +1,17 @@
+<div class="d-flex app" id="wrapper">
+    <!-- Sidebar-->
+    <div id="sidebar-wrapper" class="app__sidebar-wrapper">
+      <img class="app__logo" src="../assets/images/logo.png">
+      <menu *ngIf="!disabled"></menu>
+    </div>
+    <!-- Page content wrapper-->
+    <div id="page-content-wrapper" class="app__page-content-wrapper">
+        <!-- Page content-->
+        <div class="container-fluid">
+          <router-outlet></router-outlet>
+        </div>
+    </div>
+    <div class="app__cart" *ngIf="!disabled">
+      <cart></cart>
+    </div>
+</div>

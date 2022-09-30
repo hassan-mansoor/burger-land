@@ -1,0 +1,46 @@
+<div class="menu">
+    <!---Top menu for small resolution-->
+    <div class="fixed-top menu__top">
+        <nav class="navbar navbar-dark bg-light">
+        <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarToggleExternalContent" 
+                aria-controls="navbarToggleExternalContent" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+            <button class="btn" (click)="open()">
+                <i class="bi bi-cart-fill mr-1"></i> 
+                <span class="mr-1">DKK</span>
+                <span>{{ totalPrice }}</span>   
+            </button>   
+        </div>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-light p-4 border-top border-white text-left">
+                <li *ngFor="let item of menuItems"
+                [ngClass]="{ 'active' : item.name === selectedItem.name }"
+                (click)="activeSelectedItem(item)"
+                [routerLink]="[item.link]">
+                    {{ item.name }}
+                </li>
+            </div>
+        </div>
+    </div>
+
+    <!---Sidebae menu-->
+
+    <div class="card menu__sidebar mt-2">
+        <nav class="menu--items">
+            <li *ngFor="let item of menuItems" 
+            [ngClass]="{ 'active' : item.name === selectedItem.name }"
+            (click)="activeSelectedItem(item)"
+            [routerLink]="[item.link]">
+                {{ item.name }}
+            </li>
+        </nav>
+    </div>
+</div>
